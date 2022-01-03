@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body{
+    line-height: 1.8;
+    color: #898fa1;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color:#11245a;
+}
+a{
+    font-weight: 700;
+    transition: all 0.45 ease;
+    padding-left: 132px;
+    padding-top: 30px;
+}
+img{
+    width: 100%;
+}
+
+small{font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.title-sm{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+/* navbar start */
+.logo-text{
+    font-size: 23px;
+    text-transform: uppercase;
+    color:#11245a!important;
+
+}
+.navbar.navbar-light{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+     
+ }
+ 
+ .navbar .nav-link{
+     font-size: 12px;
+     text-transform: uppercase;
+     letter letter-spacing:1px;
+     
+ }
+ 
+ .navbar-collapse{
+ 
+     padding-right: 133px;  
+ }
+ 
+ .navbar-light .navbar-nav .nav-link.active {
+     color:#e93BB1;
+ }
+/* navbar end */
+
+/* banner start */
+.home{
+     background:linear-gradient(rgba(17, 16 ,90, 0.8),rgba(17, 36, 90, 0.8) ), url("../images/hero_img.jpg");
+     min-height: 100vh;
+    background-attachment:fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+ 
+  }
+  .home h1{
+      font-weight: 700;
+      
+
+  }
+
+  .home p{
+      max-width: 550px;
+      margin:20px auto;
+  }
+.btn{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding:12px 28px;
+    border-radius: 0;
+}
+
+  .btn-brand{
+      background-color: #e93BB1;
+      color: #fff;
+
+  }
+  .btn-brand:hover{
+      background-color: #ce2f9b;
+      color:#fff
+  }
+
+
+/* banner end */
+
+/* service start */
+.section-intro{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.section-intro .hline{
+    width: 120px;
+    height: 2px;
+    background-color: brown;
+    margin: auto;
+
+}
+
+.icon-box{
+    width: 60px;
+    height: 60px;
+    background-color: #ce2f9b;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    flex: none;
+}
+/* service end */
+
+/*portfolio start  */
+.portfolio-header h2{
+    text-align: center;
+    margin: 50px;
+    
+}
+.portfolio-item{
+    overflow: hidden;
+    position: relative;
+}
+.portfolio-item img,
+.portfolio-item .portfolio-overlay{
+    transition: all 0.4s ease;
+}
+
+.portfolio-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 36, 90, 0.8);
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    opacity: 0;
+}
+ .portfolio-overlay h3,
+ .portfolio-overlay h6{
+     color: bisque;
+ }
+
+ .portfolio-item:hover .portfolio-overlay{
+     opacity: 1;
+ }
+
+/* portfolio end */
+
+/* feature start*/
+
+.feature .icon-box{
+    width: 34px;
+    height: 34px;
+    border-radius: 100px;
+    
+}
+/* feature start*/
+/* team start*/
+.team-member{
+    background-color: rgb(4, 4, 75);
+}
+.team-member.even{
+    background-color:rgb(20, 20, 136) ;
+}
+.team-member .hline{
+    width: 70px;
+    height: 2px;
+    margin: 16px auto;
+    background-color: rgba(255, 255, 255, 0.445);
+    
+}
+
+.team-member .team-member-img img
+.team-member-img .social-icon{
+    transition: all 0.4s ease;
+}
+.team-member-img{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.team-member-img .social-icon{
+    width: 100%;
+    height: 60px;
+    background-color: #ce2f9b;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+.team-member-img .social-icon i{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.514);
+    font-size: 24px;
+    color:#fff;
+    border-radius: 100%;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.team-member-img .social-icon i :hover{
+    background-color: rgb(255, 254, 254);
+}
+.team-member:hover .team-member-img .social-icon{
+    bottom: 0px;
+}
+.team-member:hover img{
+    transform: translateY(-60px);
+}
+
+/*team end*/
+
+/* contact start*/
+form .form-control{
+    border-radius: 0;
+   
+}
+form .form-control:focus{
+    border-color:  #ce2f9b;
+    box-shadow: none;
+}
+/* contact end*/
+/*cta start*/
+#cta{
+    background-color:#ce2f9b; ;
+}
+/*cta  end*/
+/* footer-start */
+.footer-icon{
+    color: rgb(102, 98, 93);
+}
+footer .footer-top{
+    margin-top: 60px;
+}
+/* footer end */
